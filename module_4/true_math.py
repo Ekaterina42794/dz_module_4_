@@ -8,11 +8,14 @@
 from math import inf
 
 def divide(first, second):
-    if second != 0:
-        a = first / second
+    if second == 0:
+        return inf
     else:
-        a = inf
-    print(a)
+        return first / second
 
-divide(49, 7)
-divide(15, 0)
+
+if __name__ == "__main__":
+# Чтобы ф-ции не вызывались при импорте, в родных модулях их нужно оборачивать в if __name__ == "__main__":
+    print(divide(69, 3))
+    print(divide(3, 0))
+
