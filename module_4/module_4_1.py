@@ -1,15 +1,21 @@
 print('Задача "А как делить?":')
-
-from fake_math import divide as fake_md
-from true_math import divide as true_md
-
-print('"fake_math divide"')
-result1 = fake_md(69, 3)
-result2 = fake_md(3, 0)
 print('')
-print('"true_math divide"')
-result3 = true_md(49, 7)
-result4 = true_md(15, 0)
+
+from module_4.fake_math import divide as fake_md
+from true_math import divide as true_md
+# Чтобы ф-ции не вызывались при импорте, в родных модулях их нужно оборачивать в if __name__ == "__main__":
+
+print("fake_math:",true_md.__name__)
+print(fake_md(9, 3))
+print(fake_md(13, 0))
+
+print('')
+print("true_math:",true_md.__name__)
+print(true_md(14, 7))
+print(true_md(10, 0))
+
+
+
 
 
 '''

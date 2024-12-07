@@ -4,17 +4,14 @@
 # Функция должна возвращать результат деления first на second,
 # но когда в second записан 0 - возвращать строку 'Ошибка'.
 
-def divide(first,second):
-    if second != 0:
-        a = first / second
-        print(a)
+def divide(first, second):
+    if second == 0:
+        return "Ошибка"
     else:
-        print('Ошибка')
+        return first / second
 
 
-
-
-
-divide(69,3)
-divide(3,0)
-
+if __name__ == "__main__":
+# Чтобы ф-ции не вызывались при импорте, в родных модулях их нужно оборачивать в if __name__ == "__main__":
+    print(divide(69, 3))
+    print(divide(3, 0))
