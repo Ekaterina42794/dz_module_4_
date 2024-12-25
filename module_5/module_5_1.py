@@ -14,7 +14,7 @@ class House:
 
     def go_to(self, new_floor):  # номер этажа(int), на который нужно приехать
         self.go_to = int(new_floor)
-        for i in range(self.go_to + 1):
+        for i in range(1,self.go_to + 1):
             if self.number_of_floors >= self.go_to>=0:
                 print(i)
             else:
