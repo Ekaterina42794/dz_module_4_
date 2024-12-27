@@ -22,11 +22,11 @@ class House:
                 break
 
 h1 = House('ЖК Горский', 18)
-h1.go_to(20)
+h1.go_to(10)
 print(h1.name,',',h1.go_to,'из', h1.number_of_floors)
 print('___')
 
-h2 = House('Домик в деревне', 5)
+h2 = House('Домик в деревне', 2)
 h2.go_to(5)
 print(h2.name,',',h2.go_to,'из', h2.number_of_floors)
 print('___')
